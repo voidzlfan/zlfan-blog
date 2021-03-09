@@ -1,11 +1,18 @@
 import React, { Component } from "react";
-import { Button } from "antd"
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import Index from "./pages/index";
+import Login from "./pages/login";
 
 class App extends Component {
-
   render() {
     return (
-      <Button type="primary">你好</Button>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/login" component={Login}></Route>
+          <Route path="/" component={Index}></Route>
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
