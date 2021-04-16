@@ -18,10 +18,7 @@ const { Sider, Content } = Layout;
 
 //导航路由
 class Index extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+
 
   render() {
     return (
